@@ -170,6 +170,7 @@ Specify optional SINGLE (T)) to try to run only a single test case."
   
   (get-buffer-create *gounit-output-buf-name*)
   (with-current-buffer *gounit-output-buf-name*
+    (tab-line-mode 1)
     (erase-buffer))
   (display-buffer *gounit-output-buf-name*)
   
